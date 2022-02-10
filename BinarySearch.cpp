@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 int BinarySearchfn(int arr[], int size, int element){
-
 	int start = 0;
 	int end = size -1 ;
 	int mid;
