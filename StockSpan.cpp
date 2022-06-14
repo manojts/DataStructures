@@ -1,5 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
+/*
+
+	Find NGL - index
+	result = i - NGL-Index[i];
+
+*/
 int main(){
 	int arr[7]={100, 80, 60, 70, 60, 75, 85};
 	vector<int> res;

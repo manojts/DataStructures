@@ -1,5 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
+/*
+
+	Find Maximum Element to Left 
+	Find Maximum Element to Right
+	Result += Minimum(Left[i], Right[i]) - array[i]
+
+*/
 int findMin(int a, int b)
 {
 	if(a<b)

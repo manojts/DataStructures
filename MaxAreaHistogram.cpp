@@ -1,5 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
+/*
+
+	Find Nearest Smaller Right - NSR - Index - Reverse(NSR-Index)
+	Find Nearest Smaller Left - NSL - Index
+	Result = Max((NSR[i] - NSL[i] - 1) * array[i])
+
+
+*/
 vector<int> findNSR(int array[], int size)
 {
 	stack<int> s;
