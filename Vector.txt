@@ -1,0 +1,42 @@
+ std::vector<int> first;                                // empty vector of ints - default
+ std::vector<int> second (4,100);                       // four ints with value 100 - fill constructor
+ std::vector<int> third (second.begin(),second.end());  // iterating through second - range constructor
+ std::vector<int> fourth (third);                       // a copy of third - copy constructor
+
+Assigning the vector
+
+std::vector<int> foo (3,0);
+std::vector<int> bar (5,0);
+
+bar = foo; // assigning foo to bar
+foo = std::vector<int>(); // making it size zero - default construtor
+
+std::cout << "Size of foo: " << int(foo.size()) << '\n'; // 0
+std::cout << "Size of bar: " << int(bar.size()) << '\n'; // 3
+
+Functions
+	vect.at(index) 						// returns the element at index i, also used for assigning vect.at(i) = 10;
+	vect.begin() 						// An iterator to the beginning of the sequence container.
+	vect.end() 							// An iterator to the element past the end of the sequence.
+	vect.size() 						// number of occupied elements
+	vect.capacity() 					// total number of elements that vector can hold.
+	vect.empty() 						// true if the container size is 0, false otherwise.
+	vect.push_back(10);
+	vect.pop_back();
+	sort(vect.begin(), vect.end()); 	// sorts vector O(n log n);
+	vect.insert (position, val)
+
+
+Maps
+	map<int, int> m;// stores elements in key value pair and store the elements in sorted order.
+	m.size()// size of the map
+	m.begin()
+	m.end()
+
+	m.find(n)// searches the key nd return the value if found else return iterator to m.end();
+	m.erase(key) // erase by key
+	map<int ,int>::iterator itr;
+	for(itr=m.begin();itr!=m.end();itr++)
+		cout<<itr->first<<" "<<itr->second<<endl;
+
+Bit manupulation
